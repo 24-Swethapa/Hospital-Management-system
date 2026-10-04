@@ -1,0 +1,361 @@
+/* ================================
+   GENERAL
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #333;
+}
+
+/* ================================
+   NAVBAR
+================================ */
+
+.navbar {
+    width: 100%;
+    background: #0f4c81;
+    color: white;
+    padding: 18px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* ================================
+   MAIN CONTAINER
+================================ */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 35px auto;
+}
+
+.page-title {
+    font-size: 32px;
+    color: #12355b;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 30px;
+}
+
+/* ================================
+   DASHBOARD
+================================ */
+
+.dashboard-welcome {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+}
+
+.dashboard-welcome h1 {
+    color: #12355b;
+    margin-bottom: 10px;
+}
+
+.dashboard-welcome p {
+    color: #666;
+}
+
+/* ================================
+   STATISTICS
+================================ */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.stat-card h3 {
+    color: #777;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.stat-card .number {
+    color: #1976d2;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* ================================
+   FEATURE CARDS
+================================ */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 14px;
+    padding: 28px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.card h2 {
+    color: #12355b;
+    margin-bottom: 12px;
+    font-size: 21px;
+}
+
+.card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* ================================
+   BUTTONS
+================================ */
+
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 7px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.btn-primary {
+    background: #1976d2;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #125ea7;
+}
+
+.btn-success {
+    background: #198754;
+    color: white;
+}
+
+.btn-success:hover {
+    background: #146c43;
+}
+
+.btn-danger {
+    background: #dc3545;
+    color: white;
+}
+
+.btn-danger:hover {
+    background: #b02a37;
+}
+
+/* ================================
+   FORMS
+================================ */
+
+.form-card {
+    background: white;
+    padding: 30px;
+    max-width: 650px;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+}
+
+.form-card h2 {
+    color: #12355b;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+    color: #333;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #1976d2;
+    box-shadow: 0 0 0 3px rgba(25,118,210,0.12);
+}
+
+/* ================================
+   TABLE
+================================ */
+
+.table-card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+    overflow-x: auto;
+}
+
+.table-card h2 {
+    color: #12355b;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th {
+    background: #0f4c81;
+    color: white;
+    padding: 13px;
+    text-align: left;
+}
+
+table td {
+    padding: 13px;
+    border-bottom: 1px solid #eee;
+}
+
+table tr:hover {
+    background: #f5f9ff;
+}
+
+/* ================================
+   ALERTS
+================================ */
+
+.alert {
+    background: #d1e7dd;
+    color: #0f5132;
+    padding: 12px 15px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+
+.alert-error {
+    background: #f8d7da;
+    color: #842029;
+}
+
+/* ================================
+   BACK LINK
+================================ */
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #1976d2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* ================================
+   FOOTER
+================================ */
+
+.footer {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    background: #0f4c81;
+    color: white;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 94%;
+    }
+
+    .page-title {
+        font-size: 26px;
+    }
+
+    .navbar a {
+        margin-left: 10px;
+    }
+}
